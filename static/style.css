@@ -26,6 +26,17 @@ body {
   color: #ffd6df !important;
 }
 
+/* --- Burger menu color override --- */
+.navbar-toggler {
+  border-color: #ffd6df !important;
+  background: transparent !important;
+  outline: none;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(255,214,223, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+
+/* Divider between links */
 .nav-separator {
   display: inline-block;
   width: 2px;
@@ -188,6 +199,31 @@ body {
     padding: 8px 18px;
     font-size: 0.98rem;
   }
+  .icon-link {
+    font-size: 1.15rem;
+    padding: 8px 12px;
+    margin: 0 4px;
+  }
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 600px) {
+  .profile-container {
+    padding: 1.1rem 6px 1.1rem 6px;
+  }
+  .profile-img {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 0.9rem;
+  }
+  .icon-links {
+    margin-top: 0.38rem;
+  }
+  .icon-link {
+    font-size: 1rem;
+    padding: 6px 10px;
+    margin: 0 3px;
+  }
 }
 
 /* Remove blue outline on buttons in some browsers */
@@ -198,7 +234,6 @@ body {
 }
 
 /* Project Section */
-
 .project-card {
   background: #fff;
   border-radius: 16px;
@@ -244,6 +279,4 @@ body {
   display: inline-block;
   letter-spacing: 0.03em;
 }
-
-
 
