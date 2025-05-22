@@ -212,17 +212,20 @@ body {
     padding: 1.1rem 6px 1.1rem 6px;
   }
   .profile-img {
-    width: 85px;
-    height: 85px;
+    width: 130px;
+    height: 130px;
     margin-bottom: 0.9rem;
+  }
+  .bio-title {
+    font-size: 1.25rem;
   }
   .icon-links {
     margin-top: 0.38rem;
   }
   .icon-link {
-    font-size: 1rem;
-    padding: 6px 10px;
-    margin: 0 3px;
+    font-size: 1.1rem;
+    padding: 7px 12px;
+    margin: 0 4px;
   }
 }
 
@@ -279,4 +282,5 @@ body {
   display: inline-block;
   letter-spacing: 0.03em;
 }
+
 
