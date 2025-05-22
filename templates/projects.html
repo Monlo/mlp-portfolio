@@ -1,0 +1,194 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container project-list mt-5">
+  <h2 class="section-title mb-4">Projects</h2>
+  <div class="row g-4">
+
+    <!-- Project 1 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card h-100">
+        <img src="{{ url_for('static', filename='img/energy_dc.png') }}" class="card-img-top" alt="Estimating Data Centres EU">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Estimating the Energy Consumption and Environmental Impacts of Data Centres in the EU</h5>
+          <p class="card-text">
+            Master’s thesis: Developed a bottom-up, area-based model to estimate the energy consumption and CO₂ emissions in EU data centers. Included geospatial clustering, scenario analysis, and policy implications.
+          </p>
+          <div class="tech-row">
+            <span class="tech-pill">Python (Pandas, NumPy, Scikit-learn)</span>
+            <span class="tech-pill">Web Scraping (Selenium)</span>
+            <span class="tech-pill">Geocoding (Nominatim, Photon)</span>
+            <span class="tech-pill">Machine Learning (Random Forest, TF-IDF)</span>
+            <span class="tech-pill">Spatial Analysis & Visualization</span>
+          </div>
+          <a href="https://github.com/Monlo/thesis-dc-emissions" class="btn btn-outline-peach mt-2" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+</div>
+
+   <!-- Project 4 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card h-100">
+        <img src="{{ url_for('static', filename='img/germany.png') }}" class="card-img-top" alt="Police Lethality Sao Paulo">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Not All Roofs Are Equal: Land Use, Migration, and Environmental Inequality across Germany</h5>
+          <p class="card-text">
+          Geospatial analysis for #DataFestGermany2025 at Ludwig-Maximilians-Universität München. We explored how spatial inequality and migration intersect in housing access across Germany, visualizing disparities in living space and their links to income, regional divides, and environmental variables. This project won the Best Visualization prize.
+          </p>
+          <div class="tech-row">
+            <span class="tech-pill">R (ggplot, sf, tidyverse) </span>
+            <span class="tech-pill">Feature Importance</span>
+            <span class="tech-pill">Geospatial Regression</span>
+          </div>
+          <a href="https://www.linkedin.com/feed/update/urn:li:activity:7312572714928476160/" class="btn btn-outline-peach mt-2" target="_blank">View more</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card h-100">
+        <img src="{{ url_for('static', filename='img/nlp.png') }}" class="card-img-top" alt="AI Act Environmental Risks">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Identifying AI’s Environmental Risks: Using NLP to Analyzing Public Feedback on the AI Act</h5>
+          <p class="card-text">
+              Used Natural Language Processing to analyze over 400 public consultation submissions on the EU AI Act, focusing on climate and environmental risks.
+          </p>
+          <div class="tech-row">
+          <span class="tech-pill">Python (Pandas, Numpy, Scikit-learn)</span>
+          <span class="tech-pill">NLP (NLTK, Word2Vec, Transformers)</span>
+          <span class="tech-pill">Clustering (UMAP, KMeans)</span>
+          <span class="tech-pill">Web Scraping (Selenium, PyPDF2)</span>
+          <span class="tech-pill">Visualization (Matplotlib, Seaborn, WordCloud)</span>
+          </div>
+          <a href="https://github.com/Monlo/nlp-research-note-ai-act" class="btn btn-outline-peach mt-2" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Project 4 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card h-100">
+        <img src="{{ url_for('static', filename='img/police_lethality.png') }}" class="card-img-top" alt="Police Lethality Sao Paulo">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Geospatial Analysis of Police Lethality in São Paulo, Brazil</h5>
+          <p class="card-text">
+            Spatial analysis and modeling of police-related deaths in São Paulo using census, income, and incident data. I was responsible for the data visualization and the spatial regression models.
+          </p>
+          <div class="tech-row">
+            <span class="tech-pill">R (sf, spdep, spatialreg, tidyverse, ggplot2)</span>
+            <span class="tech-pill">Spatial Regression (SAR/SEM)</span>
+            <span class="tech-pill">LISA Clustering</span>
+            <span class="tech-pill">Mapping & Visualization</span>
+          </div>
+          <a href="https://github.com/Monlo/geospatial_analyisis" class="btn btn-outline-peach mt-2" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Project 5 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card h-100">
+        <img src="{{ url_for('static', filename='img/employment_bias.png') }}" class="card-img-top" alt="Employment Bias ML">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Employment Bias: ML for Labour Market Discrimination</h5>
+          <p class="card-text">
+Developed and evaluated machine learning models to predict self-reported job discrimination among immigrants and minorities across Europe, using the EU-MIDIS II survey. I was responsible for building, tuning, and interpreting the ML classification models.
+          </p>
+            <div class="tech-row">
+              <span class="tech-pill">Python (pandas, numpy, Matplotlib & Seaborn)</span>
+              <span class="tech-pill">scikit-learn</span>
+              <span class="tech-pill">XGBoost</span>
+              <span class="tech-pill">Cross-Validation & Grid Search</span>
+            </div>
+          <a href="https://github.com/Monlo/Employment-Bias" class="btn btn-outline-peach mt-2" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card h-100">
+        <img src="{{ url_for('static', filename='img/debt_app.png') }}" class="card-img-top" alt="Debt Settlement App">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Debt Settlement App</h5>
+          <p class="card-text">
+            Full-stack web app for tracking and settling debts between users. Built for Data Structures & Algorithms (2024), the app features a dynamic transaction network, debt tracking, and PayPal payment links. I led the frontend development and visualizations.
+          </p>
+          <div class="tech-row">
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">Flask</span>
+            <span class="tech-pill">HTML/CSS</span>
+            <span class="tech-pill">Bootstrap</span>
+            <span class="tech-pill">PayPal API</span>
+            <span class="tech-pill">Git</span>
+          </div>
+          <a href="https://elena3er.pythonanywhere.com/" class="btn btn-outline-peach mt-2" target="_blank">View Prototype</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 7 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card h-100">
+        <img src="{{ url_for('static', filename='img/impunidad.png') }}" class="card-img-top" alt="Impunity in Intentional Murders and Feminicide, Impunidad Cero 2022">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Impunity in Intentional Murders and Feminicide</h5>
+          <p class="card-text">
+            I coordinated this national report analyzing impunity levels in intentional homicides and femicides in Mexico. Between 2016 and 2021, only 7 out of every 100 intentional homicides led to a conviction, and less than half of registered femicides were solved.
+          </p>
+          <div class="tech-row">
+            <span class="tech-pill">R (tidyverse, ggplot2, dplyr)</span>
+            <span class="tech-pill">Statistical Analysis</span>
+            <span class="tech-pill">Data Visualization</span>
+            <span class="tech-pill">Report Writing</span>
+          </div>
+          <a href="https://www.impunidadcero.org/uploads/app/articulo/175/contenido/1669895146I15.pdf" class="btn btn-outline-peach mt-2" target="_blank">View Report</a>
+        </div>
+      </div>
+    </div>
+
+<!-- Project 8 -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card project-card h-100">
+        <img src="{{ url_for('static', filename='img/transformaciondigital.png') }}" class="card-img-top" alt="Impunity in Intentional Murders and Feminicide, Impunidad Cero 2022">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Digital Transformation of the Public Prosecutors’ Offices in Mexico 2024</h5>
+          <p class="card-text">
+            I led and coordinated this nationwide assessment of digital transformation across Mexico’s 32 state prosecutors’ offices. The project developed a methodology to measure progress in areas like digital platforms for complaints, case management systems, data-driven analysis, and cybersecurity.
+          </p>
+          <div class="tech-row">
+            <span class="tech-pill">R (tidyverse, ggplot2, dplyr)</span>
+            <span class="tech-pill">Methodology Design</span>
+            <span class="tech-pill">Policy Evaluation</span>
+            <span class="tech-pill">Report Writing</span>
+          </div>
+          <a href="https://www.impunidadcero.org/uploads/app/articulo/212/contenido/1734045241Z66.pdf" class="btn btn-outline-peach mt-2" target="_blank">View Report</a>
+        </div>
+      </div>
+    </div>
+
+<!-- Project 9 -->
+<div class="col-md-6 col-lg-4">
+  <div class="card project-card h-100">
+    <img src="{{ url_for('static', filename='img/homicidios_cdmx.png') }}" class="card-img-top" alt="5,013 Murders in Mexico City, México Evalúa 2018">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title">5,013 Murders in Mexico City</h5>
+      <p class="card-text">
+        In my first research collaboration as research assistant, I contributed to this report mapping homicide “hotspots” in Mexico City. The study identified priority zones for intervention and produced practical recommendations for targeted policing and urban policy.
+      </p>
+      <div class="tech-row">
+        <span class="tech-pill">Data Cleaning</span>
+        <span class="tech-pill">Geospatial Analysis</span>
+        <span class="tech-pill">ArcGIS/QGIS</span>
+        <span class="tech-pill">Geocoding</span>
+      </div>
+      <a href="https://www.mexicoevalua.org/wp-content/uploads/2018/10/5013HomicidiosCDMX.pdf" class="btn btn-outline-peach mt-2" target="_blank">View Report</a>
+    </div>
+  </div>
+</div>
+
+  </div>
+</div>
+{% endblock %}

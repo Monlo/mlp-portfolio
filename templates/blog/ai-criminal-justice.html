@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5 mb-5" style="max-width: 700px;">
+  <h1 class="mb-3" style="color: #db7093;">{{ post.title }}</h1>
+  <div class="blog-meta mb-4">{{ post.date }}</div>
+  <img src="{{ url_for('static', filename='img/' ~ post.image) }}" class="img-fluid rounded mb-4" alt="{{ post.title }}">
+  <div class="blog-content">
+
+    <h2>Introduction</h2>
+    <p>
+      In recent years, artificial intelligence (AI) has rapidly developed and spread into many aspects of our lives. As governments collect and organize growing amounts of data, the use of automated systems to inform decision-making is becoming more common. In criminal justice, these tools have been used for decades by governments around the world to predict crime, assess risk, and support judicial procedures. However, neither data nor algorithms are free from bias. In fact, they can reproduce and even reinforce existing inequalities, leading to unfair outcomes. That’s why it’s urgent to discuss the risks of automated systems in security and justice—especially in countries like Mexico, where there are not enough safeguards to prevent data misuse and protect fundamental rights such as privacy.
+    </p>
+
+    <h2>What is AI in Security and Justice?</h2>
+    <p>
+      What we now call AI is essentially the automatic processing and analysis of information. These systems are driven by algorithms and statistical models trained on large datasets and are used to automate human processes—identifying patterns, making predictions, or solving problems. While current AI systems are not truly “intelligent,” the field’s ultimate goal is Artificial General Intelligence (AGI): systems that could eventually perform any intellectual task a human can do.
+    </p>
+
+    <h3>Examples in Practice</h3>
+    <ul>
+      <li>
+        <strong>Predictive Policing Models:</strong> Algorithms trained on historical crime data to predict where and when crimes are likely to occur. In the US, “PredPol” is one such machine learning algorithm, helping to direct police patrols. However, research has shown that it disproportionately predicts crime in neighborhoods with higher numbers of people of color, Latinos, or low-income residents, resulting in more police presence and higher reported incidents in these areas.
+      </li>
+      <li>
+        <strong>Risk Assessment Tools:</strong> Designed to predict the future behavior of defendants and convicts. The COMPAS algorithm, used in some US courts to predict the risk of recidivism, has been criticized for racial bias, inaccurate predictions, and lack of transparency in how risk scores are determined.
+      </li>
+      <li>
+        <strong>Surveillance and Facial Recognition:</strong> More than half of US federal police agencies now use facial recognition for investigations. AI-powered recognition can match faces in photos or footage to database images. Yet, evaluations show these systems are more error-prone with Native American, Black, and Asian populations, and there have been cases of wrongful arrests due to false positives from these technologies.
+      </li>
+    </ul>
+
+    <h2>Main Challenges for AI in Justice in Mexico</h2>
+    <ol>
+      <li>
+        <strong>Lack of Reliable Data:</strong> Mexico still lacks reliable data on judicial processes. This is mainly due to the absence of standardized information systems that structure criminal case data across all stages. Data is often not broken down by victim or defendant, making it difficult to uncover inequalities—such as discrimination by sex, gender, age, socioeconomic status, disability, or indigenous status. These data gaps can result in outcomes that disproportionately affect vulnerable groups, as seen with predictive policing tools.
+      </li>
+      <li>
+        <strong>Algorithmic Bias and Black Boxes:</strong> As with the COMPAS case, algorithms and the parameters they use are not immune to bias. They can reinforce stereotypes and perpetuate inequalities, leading to unfair results. But detecting discrimination in these systems is often very difficult, as most are “black boxes”—opaque and hard for the public to understand.
+      </li>
+      <li>
+        <strong>Privacy and Surveillance:</strong> Without proper regulation and safeguards, governments may use personal data to violate human rights, such as privacy. In recent years, Mexico has seen increased unauthorized surveillance by authorities. Agencies like the former Attorney General’s Office (now FGR), the National Intelligence Center, and the Ministry of Defense have been accused of using Pegasus spyware to target citizens and civil society members—without accountability. Alarmingly, even the President has justified such surveillance for intelligence purposes.
+      </li>
+    </ol>
+
+    <h2>We Need Safeguards to Avoid Automating Injustice</h2>
+    <p>
+      AI is here, and we can’t ignore the risks. Technology is not neutral, and automating criminal justice can lead to deeply unfair outcomes. In fact, the risks are so high that some organizations in the European Union have proposed an outright ban on automated risk assessments in judicial procedures. Cities like San Francisco and Boston have already banned police use of facial recognition. In Mexico, where impunity and rights violations remain high—even by authorities themselves—it’s urgent to have a public discussion about the regulations needed to prevent misuse of automated systems.
+    </p>
+    <p>
+      International experience shows Mexico needs a legal framework for the ethical and responsible use of data, transparency, and privacy protection. The worst scenario would be for AI to outpace us—leaving us with technological solutionism, legal gaps, and none of the safeguards needed to prevent injustice and further rights violations.
+    </p>
+
+    <p class="mt-4">
+      <em>This article was originally published in Spanish as “Inteligencia artificial en seguridad y justicia: lecciones para México.” <a href="https://redaccion.nexos.com.mx/inteligencia-artificial-en-seguridad-y-justicia-lecciones-para-mexico/" target="_blank" rel="noopener">Read the original at Nexos (June 2023).</a></em>
+    </p>
+  </div>
+</div>
+{% endblock %}
+
+
+
+
+
